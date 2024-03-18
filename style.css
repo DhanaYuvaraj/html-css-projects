@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding:0;
+    background-image: url(images/pexels-unknown-user-1646753.jpg);
+    background-repeat: no-repeat;
+    background-size:100%
+    
+    
+}
+
+
+
+.logo{
+    font-size:xx-large;
+    margin:1px;
+    
+}
+
+
+nav li{
+
+    display:inline-block;
+    margin:2px;
+
+}
+nav{
+    background-color:darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:80%;
+    font-size: 28px;
+    
+}
+
+nav a{
+        
+    text-decoration: none;
+}
+nav a:hover{
+    color:whitesmoke;
+}
+
+.line{
+    height:2px;
+    width:15px;
+    background-color:white;
+    margin-bottom: 2px;
+    cursor: pointer;
+
+}
+
+.menu{
+    display: none;
+}
+
+@media all and (max-width:591px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav li{
+        display: block;
+        padding: 5px 0;
+        
+    }
+    ul{
+        text-align: center;
+        padding:0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin:10px 0px 0px 20px;
+    }
+
+    .menu{
+    display: block;
+    position: absolute;
+    right:10px;
+    top:30px;
+ }
+ .showmenu{
+    display: block;
+ }
+ 
+}
